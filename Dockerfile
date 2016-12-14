@@ -5,7 +5,7 @@ MAINTAINER wdzaw@gmail.com
 
 # The RUN instruction will execute any commands
 # Adding HelloWorld page into Nginx server
-#RUN echo "Hello World DaoCloud!" > /usr/share/nginx/html/index.html
+RUN echo "Hello World DaoCloud!" > /tmp/docker
 
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime
 EXPOSE 80
