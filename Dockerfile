@@ -9,6 +9,7 @@ RUN yum install wget -y
 RUN yum install net-tools -y
 RUN yum install openssh* -y
 RUN yum install initscripts -y
+RUN yum install crontabs -y
 RUN yum -y swap -- remove fakesystemd -- install systemd systemd-libs
 RUN yum -y update; yum clean all; \
 rm -f /lib/systemd/system/multi-user.target.wants/*;\
