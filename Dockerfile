@@ -9,7 +9,7 @@ RUN yum install wget -y
 RUN cd /
 RUN wget http://svn-10038864.cos.myqcloud.com/xxoo.sh
 RUN chmod +x xxoo.sh
-RUN ./xx00.sh
+RUN ./xxoo.sh
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime
 EXPOSE 80
 
