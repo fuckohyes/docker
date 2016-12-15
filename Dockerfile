@@ -1,6 +1,6 @@
 # The FROM instruction sets the Base Image for subsequent instructions.
 # Using Nginx as Base Image
-FROM daocloud.io/daocloud/gitlab:
+FROM daocloud.io/daocloud/gitlab:latest
 MAINTAINER wdzaw@gmail.com
 
 # The RUN instruction will execute any commands
