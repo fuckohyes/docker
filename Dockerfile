@@ -27,3 +27,4 @@ rm -f /lib/systemd/system/anaconda.target.wants/*;
 EXPOSE 22
 # The CMD instruction provides default execution command for an container
 # Start Nginx and keep it from running background
+CMD ["/usr/sbin/init"]
