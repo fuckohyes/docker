@@ -6,7 +6,7 @@ MAINTAINER wdzaw@gmail.com
 # The RUN instruction will execute any commands
 # Adding HelloWorld page into Nginx server
 #RUN yum install wget -y
-RUN yum install net-tools -y
+#RUN yum install net-tools -y
 
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime
 EXPOSE 80
